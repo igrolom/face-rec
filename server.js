@@ -121,8 +121,8 @@ app.get('/profile/:id', (req, res) => {
 app.put('/image', (req, res) => imageSearch.handleImage(req, res, db));
 app.post('/imageurl', (req, res) => imageSearch.handleApiCall(req, res));
 
-app.listen(8080, () => {
-  console.log('app is running');
+app.listen(process.env.PORT || 8080, () => {
+  console.log(`app is running on PORT ${process.env.PORT}`);
 });
 
 /*
