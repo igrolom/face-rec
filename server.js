@@ -81,7 +81,8 @@ app.use(cors());
 
 app.get('/', (req, res) => {
   //   res.send('this is working');
-  res.send(database.users);
+  // res.send(database.users);
+  res.send('it is working');
 });
 
 // SIGNING POST
