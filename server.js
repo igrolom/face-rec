@@ -34,7 +34,7 @@ const { response } = require('express');
 const db = knex({
   client: 'pg',
   connection: {
-    host: '127.0.0.1',
+    host: 'postgresql-objective-08609',
     user: 'postgres',
     password: 'RehrF3096',
     database: 'smart-brain',
